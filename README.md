@@ -3,7 +3,7 @@
 ### Overview   
 This repository contains the final project for the Advanced Machine Learning Theory course under the Department of Data Science, Sungkyunkwan University.
 
-The project is to reproduce the paper "Movie Revenue Prediction using Machine Learning Models".
+The goal of the project is to reproduce an ML/DL paper, chosen to be "Movie Revenue Prediction using Machine Learning Models".
 
 Link: [https://arxiv.org/abs/2405.11651
 
