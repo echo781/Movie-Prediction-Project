@@ -5,6 +5,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import BaggingRegressor
 from sklearn.metrics import r2_score
 import numpy as np
+import pandas as pd
 
 # Loading our dataset
 df = pd.read_csv('../revised datasets\output.csv')
@@ -26,7 +27,7 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=
 base_estimator = DecisionTreeRegressor(max_depth=10, min_samples_split=10, min_samples_leaf=5, random_state=42)
 
 # Bagging to improve accuracy
-model = BaggingRegressor(estimator=base_estimator, n_estimators=10, random_state=42)
+model = BaggingRegressor(base_estimator=base_estimator, n_estimators=10, random_state=42)
 
 model.fit(X_train, y_train)
 
